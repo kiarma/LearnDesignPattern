@@ -9,7 +9,7 @@ public class WeatherData extends Observable {
 
     private double humidity;
 
-    private double pressurea;
+    private double pressure;
 
     public double getTemperature() {
         return temperature;
@@ -19,8 +19,8 @@ public class WeatherData extends Observable {
         return humidity;
     }
 
-    public double getPressurea() {
-        return pressurea;
+    public double getPressure() {
+        return pressure;
     }
 
     public void setTemperature(double temperature) {
@@ -33,8 +33,8 @@ public class WeatherData extends Observable {
         setChanged();
     }
 
-    public void setPressurea(double pressurea) {
-        this.pressurea = pressurea;
+    public void setPressure(double pressure) {
+        this.pressure = pressure;
         setChanged();
     }
 
@@ -43,7 +43,7 @@ public class WeatherData extends Observable {
         return "WeatherData{" +
                 "temperature=" + temperature +
                 ", humidity=" + humidity +
-                ", pressurea=" + pressurea +
+                ", pressurea=" + pressure +
                 '}';
     }
 }
